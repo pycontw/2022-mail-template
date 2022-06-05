@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+  <!-- Tell iOS not to automatically link certain text strings. -->
+  <!-- CSS Reset : BEGIN -->
+  <style>
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    /* What it does: Fixes webkit padding issue. */
+    table {
+      border: 0;
+      border-spacing: 0;
+      border-collapse: collapse
+    }
+
+    /* What it does: Forces Samsung Android mail clients to use the entire viewport. */
+    #MessageViewBody,
+    #MessageWebViewDiv {
+      width: 100% !important;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+    a {
+      text-decoration: none;
+    }
+
+    /* What it does: A work-around for email clients automatically linking certain text strings. */
+    /* iOS */
+    a[x-apple-data-detectors],
+    .unstyle-auto-detected-links a,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    u+#body a,
+    /* Gmail */
+    #MessageViewBody a
+
+    /* Samsung Mail */
+      {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
+    /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+    .im {
+      color: inherit !important;
+    }
+
+    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+      display: none !important;
+    }
+
+    /* What it does: Removes right gutter in Gmail iOS app.  */
+    /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u~div .email-container {
+        min-width: 320px !important;
+      }
+    }
+
+    /* iPhone 6, 6S, 7, 8, and X */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u~div .email-container {
+        min-width: 375px !important;
+      }
+    }
+
+    /* iPhone 6+, 7+, and 8+ */
+    @media only screen and (min-device-width: 414px) {
+      u~div .email-container {
+        min-width: 414px !important;
+      }
+    }
+  </style>
+  <!-- What it does: Helps DPI scaling in Outlook 2007-2013 -->
+  <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    <![endif]-->
+
+  <!-- CSS Reset : END -->
+
+  <!-- Progressive Enhancements : BEGIN -->
+  <style>
+
+  </style>
+  <!-- Progressive Enhancements : END -->
+</head>
+
+<!--
+    The email background color is defined in three places, just below. If you change one, remember to change the others.
+    1. body tag: for most email clients
+    2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+    3. mso conditional: For Windows 10 Mail
+-->
+
+<body width="100%" style="margin: 0; padding: 0 !important; background: #f3f3f5; mso-line-height-rule: exactly;">
+  <center style="width: 100%; background: #f3f3f5;">
+    <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f3f3f5;">
+      <tr>
+      <td>
+      <![endif]-->
+  
+    <!-- Visually Hidden Preview Text : BEGIN -->
+    <div
+      style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      Hi 沈弘哲，很高興有你參加台灣首次的虛擬線上 Python 年會，活動即將在 10/02 揭開序幕。 我們整理了以下實用資訊， 敬請詳細閱讀。
+    </div>
+    <!-- Visually Hidden Preview Text : END -->
+  
+    <div style="max-width: 680px; margin: 0 auto;">
+  
+      <!--[if mso]>
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="max-width: 680px; width:100%;color: #ffffff;background:#CFCFE5;">
+        <!-- Logo : BEGIN -->
+        <tr>
+          <td style="padding: 30px 30px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+              style="color:#6266ce;width:100%;font-weight:700;font-size:20px;">
+              <tr>
+                <td>
+                  <div style="width: 141px; margin:auto;">
+                    <img src="images/logo.png" alt="PyCon Logo">
+                  </div>
+  
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 2px;text-align:center;">
+                  3-4 Sep 2022, Taiwan
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Logo : END -->
+        <!-----------------------------
+  
+            EMAIL BODY : BEGIN
+  
+        ------------------------------>
+  
+        <!--  Email Body: Card BEGIN -->
+        <tr>
+          <td style="padding: 0px 10px;">
+            <div style="background: #AFAEE6;max-width: 100%;text-align:center;padding: 30px 50px;color:#323166;border-radius:20px;">
+              <h2 style="font-size:28px;font-weight:700;margin-bottom:10px;margin-top:0px;">行前信</h2>
+              <p style="font-size: 18px;font-weight:400;margin:0;line-height:28.8px;">Hi 沈弘哲，<br>
+                很高興有你參加台灣首次的虛擬線上 Python 年會，活動即將在 10/02 揭開序幕。 我們整理了以下實用資訊， 敬請詳細閱讀。</p>
+            </div>
+          </td>
+        </tr>
+        <!--  Email Body: Card END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section 交通 BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">交通</h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">年會場地位於中央研究院人文社會科學館（台北市南港區研究院路二段
+              128 號），詳細位置可以參考 <a style="text-decoration: underline;" href="https://tw.pycon.org">PyConTw2019_官方網站</a> 或 <a style="text-decoration: underline;"
+                href="https://tw.pycon.org/">中研院院區圖</a>。</p>
+          </td>
+        </tr>
+        <!--  Email Body: Section 交通 END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section 活動 BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+              活動
+            </h3>
+            <!-- Nested List BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <!-- Nested List Block: 大會議程 BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">大會議程</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">請參考 <a style="text-decoration: underline;" href="https://tw.pycon.org/">PyConTw2019 議程</a></p>
+                        
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+                  
+                </td>
+              </tr>
+              <!-- Nested List Block: 大會議程 END -->
+              <!-- Nested List Block: 閃電秀（Lightning Talks） BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">閃電秀（Lightning Talks）</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">
+                          閃電秀在會議每天下午結束之前舉辦，是每個演講包含設置投影片僅限五分鐘的刺激活動。如果要報名閃電秀，請在註冊櫃檯的「閃電秀」罐中投入你的講題與姓名，我們會在每天中午抽出當日的中選名單。沒有中選的講題會留在罐子裡，所以越早投稿，機會越大！
+                        </p>
+              
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+              
+                </td>
+              </tr>
+              <!-- Nested List Block: 閃電秀（Lightning Talks） END -->
+              <!-- Nested List Block: 周六晚會（PyNight / BoF） BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">周六晚會（PyNight / BoF）
+                        </h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">
+                          在大會的第二天晚上六點開始，會議廳週邊將充滿歡樂輕鬆的氣氛，有音樂會、鋼琴演奏、隨手可取的餐點飲食，讓你盡情和同好交流。預計接近 20:50 晚會結束。過往類似的活動記錄可參考 <a style="text-decoration: underline;" href="https://tw.pycon.org/">這裡</a> ，可說是 Python 版本的 BoF Birds of
+                          a feather。您可使用這個 HackMD 頁面來查詢有多少 BoF 議題可以參與，您也可以自由建立新的、有興趣的議題找人一起交流。<a style="text-decoration: underline;" href="https://tw.pycon.org/">HackMD網址</a>
+                        </p>
+              
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+              
+                </td>
+              </tr>
+              <!-- Nested List Block: 周六晚會（PyNight / BoF） END -->
+              <!-- Nested List Block: 就業博覽會（Job Fair) BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">就業博覽會（Job Fair)
+                        </h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">
+                          這是一個專門為 Python 工程師而設的就業博覽會。Job Fair
+                          雖不會安排任何議程但開放廠商在台上自我介紹，會眾可以趁此時與現場的廠商交流、投屨歷，廠商也會藉此時宣傳自己徵才的需求。對於想找工作的會眾，我們鼓勵在這時段多與廠商互相交流，也許美好的機會就此出現。
+                        </p>
+              
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+              
+                </td>
+              </tr>
+              <!-- Nested List Block: 就業博覽會（Job Fair) END -->
+            </table>
+            <!-- Nested List END -->
+          </td>
+        </tr>
+        <!--  Email Body: Section 活動 END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section 9/18 Py逗陣開箱日 BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="text-align: center;">
+              <tr>
+                <td>
+                  <img style="margin: auto;" width="100%" src="images/gather-town-map.png" alt="Gather Town Map">
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 20px;padding-bottom: 20px;">
+                  <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin:0;">9/18 Py逗陣開箱日</h3>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-left: 20px;padding-right:20px;">
+                  <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">敬邀您中秋前夕逗陣來PyCon家玩
+                  【Py 逗陣開箱日 Unboxing Day】
+                  等你來OPEN
+                  2021/09/18 （六）19:30</p>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-top: 30px;">
+                  <!-- Button : BEGIN -->
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+                    <tr>
+                      <td aria-hidden="true" style="width: 33%;height:56px;">
+                        &nbsp;
+                      </td>
+                      <td style="width: 33%;height:56px;background: #6266CE;border-radius: 30px;">
+                        <a style="color: #ffffff;" href="https://tw.pycon.org/" >馬上報名</a>
+                      </td>
+                      <td aria-hidden="true" style="width: 33%;height:56px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- Button : END -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--  Email Body: Section 9/18 Py逗陣開箱日 END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section 注意事項 BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td style="border-left: 8px solid #323166;padding-left:30px;">
+                  <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+                    注意事項
+                  </h3>
+                  <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                    我們將在活動結束之後開立電子發票，包括個人票與企業票，並寄送至您的 email 信箱。如果對發票有疑問，請來信至：<br>
+                    organizers@pycon.tw。
+                  </p>
+                  <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                    最後，也請您務必閱讀並一同遵守 <a style="text-decoration: underline;" href="https://tw.pycon.org/">PyCon Taiwan 行為準則</a> ，讓大家都能盡情享受年會的開心氛圍，彼此交流、傳承、啟發。
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--  Email Body: Section 注意事項 END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!-----------------------------
+  
+          EMAIL BODY : END
+  
+        ------------------------------>
+  
+        <!-- Footer : BEGIN -->
+        <tr>
+          <td style="padding: 20px 40px;background:#AFAEE6;text-align: center;">
+            <!-- Footer : Icons BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td>
+                  <a href="https://www.facebook.com/pycontw" target="_blank">
+                    <img width="33" height="33" src="images/icons/facebook.png" alt="Pycon TW Facebook">
+                  </a>
+                </td>
+                <td>
+                  <a href="mailto: organizers@python.tw" target="_blank">
+                    <img width="33" height="33" src="images/icons/email.png" alt="Email to Pycon TW">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.youtube.com/c/PyConTaiwanVideo" target="_blank">
+                    <img width="33" height="33" src="images/icons/youtube.png" alt="Pycon TW Youtube">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Footer : Icons END -->
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:10px;padding-bottom:20px;color:#6266CE;text-align: center;">
+            Sent by <a style="text-decoration: underline;" href="https://tw.pycon.org/">PyCon APAC 2022</a>
+          </td>
+        </tr>
+        <!-- Footer : END -->
+      </table>
+    </div>
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </center>
+</body>
+<!-- Designed by Moto -->
+<!-- HTML/CSS by Derick -->
+</html>

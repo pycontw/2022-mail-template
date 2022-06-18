@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+  <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+  <!-- Tell iOS not to automatically link certain text strings. -->
+  <!-- CSS Reset : BEGIN -->
+  <style>
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    /* What it does: Fixes webkit padding issue. */
+    table {
+      border: 0;
+      border-spacing: 0;
+      border-collapse: collapse
+    }
+
+    /* What it does: Forces Samsung Android mail clients to use the entire viewport. */
+    #MessageViewBody,
+    #MessageWebViewDiv {
+      width: 100% !important;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+    a {
+      text-decoration: none;
+    }
+
+    /* What it does: A work-around for email clients automatically linking certain text strings. */
+    /* iOS */
+    a[x-apple-data-detectors],
+    .unstyle-auto-detected-links a,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    u+#body a,
+    /* Gmail */
+    #MessageViewBody a
+
+    /* Samsung Mail */
+      {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
+    /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+    .im {
+      color: inherit !important;
+    }
+
+    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+      display: none !important;
+    }
+
+    /* What it does: Removes right gutter in Gmail iOS app.  */
+    /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u~div .email-container {
+        min-width: 320px !important;
+      }
+    }
+
+    /* iPhone 6, 6S, 7, 8, and X */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u~div .email-container {
+        min-width: 375px !important;
+      }
+    }
+
+    /* iPhone 6+, 7+, and 8+ */
+    @media only screen and (min-device-width: 414px) {
+      u~div .email-container {
+        min-width: 414px !important;
+      }
+    }
+  </style>
+  <!-- What it does: Helps DPI scaling in Outlook 2007-2013 -->
+  <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    <![endif]-->
+
+  <!-- CSS Reset : END -->
+
+  <!-- Progressive Enhancements : BEGIN -->
+  <style>
+
+  </style>
+  <!-- Progressive Enhancements : END -->
+</head>
+
+<!--
+    The email background color is defined in three places, just below. If you change one, remember to change the others.
+    1. body tag: for most email clients
+    2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+    3. mso conditional: For Windows 10 Mail
+-->
+
+<body width="100%" style="margin: 0; padding: 0 !important; background: #f3f3f5; mso-line-height-rule: exactly;">
+  <center style="width: 100%; background: #f3f3f5;">
+    <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f3f3f5;">
+      <tr>
+      <td>
+      <![endif]-->
+
+    <!-- Visually Hidden Preview Text : BEGIN -->
+    <div
+      style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      Dear 沈弘哲
+      PyCon TW cordially invites you to join PyCon APAC 2022.
+      We hope to see you soon!
+    </div>
+    <!-- Visually Hidden Preview Text : END -->
+
+    <div style="max-width: 680px; margin: 0 auto;">
+
+      <!--[if mso]>
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="max-width: 680px; width:100%;color: #ffffff;background:#CFCFE5;">
+        <!-- Logo : BEGIN -->
+        <tr>
+          <td style="padding: 30px 30px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+              style="color:#6266ce;width:100%;font-weight:700;font-size:20px;">
+              <tr>
+                <td>
+                  <div style="width: 141px; margin:auto;">
+                    <img width="141" src="images/logo.png" alt="PyCon Logo">
+                  </div>
+
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!-- Logo : END -->
+        <!-----------------------------
+  
+            EMAIL BODY : BEGIN
+  
+        ------------------------------>
+
+        <!--  Email Body: Card BEGIN -->
+        <tr>
+          <td style="padding: 0px 10px;">
+            <!--[if mso]>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td bgcolor="#AFAEE6" style="max-width: 100%;text-align:center;padding: 30px 50px;color:#323166;">
+            <![endif]-->
+            <div
+              style="background: rgba(175, 174, 230, .60);max-width: 100%;text-align:center;padding: 30px 50px;color:#323166;border-radius:20px;">
+              <h2 style="font-size:28px;font-weight:700;margin-bottom:10px;margin-top:0px;">Dear 沈弘哲!</h2>
+              <p style="font-size: 18px;font-weight:400;margin:0;line-height:28.8px;">
+                PyCon TW cordially invites you to join PyCon APAC 2022.
+                <br>
+                We hope to see you soon!
+              </p>
+            </div>
+            <!--[if mso]>
+                </td>
+              </tr>
+            </table>
+            <![endif]-->
+
+          </td>
+        </tr>
+        <!--  Email Body: Card END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Event Information  BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">Event
+              Information</h3>
+            <p style="font-size: 16px;line-height:30px;font-weight:400;color:#323166;margin:0;">
+              Date : September 3-4, 2022</p>
+            <p style="font-size: 16px;line-height:30px;font-weight:400;color:#323166;margin:0;">
+              Time : 09:00-18:00 (GMT+8)</p>
+            <p style="font-size: 16px;line-height:30px;font-weight:400;color:#323166;margin:0;">
+              Venue : YouTube / Gather / Discord</p>
+          </td>
+        </tr>
+        <!--  Email Body: Event Information END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section Ticket Info BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">Ticket Info
+            </h3>
+            <!-- Nested List BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <!-- Nested List Block: Regular Pass BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:10px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td width="24px" style="width:24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">Regular Pass (with Pyckage)</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                  </table>
+                </td>
+              </tr>
+              <!-- Nested List Block: Regular Pass END -->
+              <!-- Nested List Block: Sponsorship Pass BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td width="24px" style="width:24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">Sponsorship Pass (with
+                          Pyckage)</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin-bottom:10px;">
+                          Buying a Sponsorship Pass means you sponsor Python Software Foundation (PSF).
+                        </p>
+                        
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+                </td>
+              </tr>
+              <!-- Nested List Block: Sponsorship Pass END -->
+            </table>
+            <!-- Nested List END -->
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">PyCon events including <a target="_blank" href="https://tw.pycon.org/2022/zh-hant">PyCon APAC
+            2022</a> , Sprints, Job Fair, Open Space, PyNight, <a target="_blank" href="https://open.firstory.me/user/pycast">PyCon TW Podcast - PyCast</a> , unique Python
+              learning experiences which were shared by students - Young Inspirers and local Python community events.</p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:5px 0px;">
+              You are the motivation for us organizing more PyCon TW events and encouraging PyCon TW to expand Python possibilities.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 0px 20px 20px 20px;">
+            <!-- Button : BEGIN -->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+              <tr>
+                <!-- <td aria-hidden="true" style="width: 33%;height:56px;">
+                          &nbsp;
+                        </td> -->
+                <td style="width: 100%;height:56px;background: #6266CE;border-radius: 30px;text-align:center;">
+                  <a target="_blank" style="color: #ffffff;display:block;width:100%;line-height:56px;" href="https://pycontw.kktix.cc/events/2022-individual">Buy Tickets</a>
+                </td>
+                <!-- <td aria-hidden="true" style="width: 33%;height:56px;">
+                          &nbsp;
+                        </td> -->
+              </tr>
+            </table>
+            <!-- Button : END -->
+          </td>
+        </tr>
+        <!--  Email Body: Section Ticket Info END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section Event Highlight BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;">
+              Event Highlight
+            </h3>
+            
+            <!-- Nested List BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <!-- <tr>
+                <td style="padding-bottom: 10px;">
+                  <p style="font-weight:700;color:#323166;margin:0;">Program</p>
+                </td>
+              </tr> -->
+              <!-- Nested List Block: Keynotes BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td width="24px" style="width:24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">Keynotes</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 10px 0px;">
+                          <strong>Dustin Ingram</strong>
+                           - A member of the
+                          board of directors at Python Software Foundation, a maintainer of the Python Package
+                          Index (PyPI), and a software engineer on Google’s Open Source Security team.</p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 10px 0px;">
+                          <strong>Iqbal Abdullah</strong>
+                           - An energetic contributor of PyCon APAC working group, a co-founder of PyCon JP and PyCon MY, and the
+                          founder and CEO of LaLoka Labs.
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 10px 0px;">
+                          For more keynote speakers information, stay tuned into our website.
+                        </p>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+                </td>
+              </tr>
+              <!-- Nested List Block: Keynotes END -->
+              <!-- Nested List Block: Talks & Tutorials BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td width="24px" style="width:24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">Talks & Tutorials</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">47 talks and 3 tutorials.</p>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+                </td>
+              </tr>
+              <!-- Nested List Block: Talks & Tutorials END -->
+              <!-- Nested List Block: Job Fair BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td width="24px" style="width:24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">Job Fair</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">Are you looking for new opportunities? Job Fair is one event for engineers. Companies are open to introduce themselves on stage
+                        and publicize the company's needs for recruiting talents. You can communicate with the companies more at this time,
+                        maybe a good opportunity will appear.</p>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+                </td>
+              </tr>
+              <!-- Nested List Block: Job Fair END -->
+            </table>
+            <!-- Nested List END -->
+          </td>
+        </tr>
+        <!--  Email Body: Section Event Highlight END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!-- Nested List Block: Pyckage - Conference Gift  BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">Pyckage - Conference Gift</h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">PyCon TW tailored the
+              conference gift - Pyckage to wrap up the memory of PyCon APAC 2022 for you.</p>
+          </td>
+        </tr>
+        <tr >
+          <td style="padding:24px 20px;">
+            <img style="margin: auto;" width="100%" src="images/pyckage.png" alt="Gather Town Map">
+          </td>
+        </tr>
+        <!-- Nested List Block: Pyckage - Conference Gift  END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Gather Town  BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">Gather Town</h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 10px 0px;">Welcome
+              to Metaverse of PyCon APAC 2022. Yes, maybe you are not in Taiwan as Formosa. However, you still can be
+              affected
+              by Taiwan cultures when listening to keynote speeches or joining Talks & Tutorials.</p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">Meet new friends in
+              PyCon APAC community and exchange Python and industry experience during the virtual Taiwan trip.</p>
+          </td>
+        </tr>
+        <!--  Email Body: Gather Town END -->
+        <tr style="padding-bottom:24px;">
+          <td style="padding: 20px;">
+            <img style="margin: auto;" width="100%" src="images/cat-temple.png" alt="Gather Town Map">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 0px 20px 40px 20px;">
+            <!-- Button : BEGIN -->
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation">
+              <tr>
+                <!-- <td aria-hidden="true" style="width: 33%;height:56px;">
+                                  &nbsp;
+                                </td> -->
+                <td style="width: 100%;height:56px;background: #6266CE;border-radius: 30px;text-align:center;">
+                  <a target="_blank" style="color: #ffffff;display:block;width:100%;line-height:56px;"
+                    href="https://pycontw.kktix.cc/events/2022-individual">Buy Tickets</a>
+                </td>
+                <!-- <td aria-hidden="true" style="width: 33%;height:56px;">
+                                  &nbsp;
+                                </td> -->
+              </tr>
+            </table>
+            <!-- Button : END -->
+          </td>
+        </tr>
+        <!-----------------------------
+  
+          EMAIL BODY : END
+  
+        ------------------------------>
+
+        <!-- Footer : BEGIN -->
+        <tr>
+          <td style="padding: 20px 40px;background:rgba(175, 174, 230, .60);text-align: center;">
+            <!-- Footer : Icons BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td>
+                  <a href="https://www.facebook.com/pycontw" target="_blank">
+                    <img width="33" height="33" src="images/icons/facebook.png" alt="Pycon TW Facebook">
+                  </a>
+                </td>
+                <td>
+                  <a href="mailto: registration@python.tw" target="_blank">
+                    <img width="33" height="33" src="images/icons/email.png" alt="Email to Pycon TW">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.youtube.com/c/PyConTaiwanVideo" target="_blank">
+                    <img width="33" height="33" src="images/icons/youtube.png" alt="Pycon TW Youtube">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Footer : Icons END -->
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:20px;padding-bottom:20px;color:#6266CE;text-align: center;">
+            Sent by <a style="text-decoration: underline;" href="https://tw.pycon.org/">PyCon APAC 2022</a>
+          </td>
+        </tr>
+        <!-- Footer : END -->
+      </table>
+    </div>
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </center>
+</body>
+<!-- Designed by Moto -->
+<!-- HTML/CSS by Derick -->
+
+</html>

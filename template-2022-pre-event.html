@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml">
+
+<head>
+  <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+  <!-- Tell iOS not to automatically link certain text strings. -->
+  <!-- CSS Reset : BEGIN -->
+  <style>
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* What it does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    /* What it does: Fixes webkit padding issue. */
+    table {
+      border: 0;
+      border-spacing: 0;
+      border-collapse: collapse
+    }
+
+    /* What it does: Forces Samsung Android mail clients to use the entire viewport. */
+    #MessageViewBody,
+    #MessageWebViewDiv {
+      width: 100% !important;
+    }
+
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+    a {
+      text-decoration: none;
+    }
+
+    /* What it does: A work-around for email clients automatically linking certain text strings. */
+    /* iOS */
+    a[x-apple-data-detectors],
+    .unstyle-auto-detected-links a,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    u+#body a,
+    /* Gmail */
+    #MessageViewBody a
+
+    /* Samsung Mail */
+      {
+      color: inherit;
+      text-decoration: none;
+      font-size: inherit;
+      font-family: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+    }
+
+    /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+    .im {
+      color: inherit !important;
+    }
+
+    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+      display: none !important;
+    }
+
+    /* What it does: Removes right gutter in Gmail iOS app.  */
+    /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u~div .email-container {
+        min-width: 320px !important;
+      }
+    }
+
+    /* iPhone 6, 6S, 7, 8, and X */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u~div .email-container {
+        min-width: 375px !important;
+      }
+    }
+
+    /* iPhone 6+, 7+, and 8+ */
+    @media only screen and (min-device-width: 414px) {
+      u~div .email-container {
+        min-width: 414px !important;
+      }
+    }
+  </style>
+  <!-- What it does: Helps DPI scaling in Outlook 2007-2013 -->
+  <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+        </xml>
+    <![endif]-->
+
+  <!-- CSS Reset : END -->
+
+  <!-- Progressive Enhancements : BEGIN -->
+  <style>
+
+  </style>
+  <!-- Progressive Enhancements : END -->
+</head>
+
+<!--
+    The email background color is defined in three places, just below. If you change one, remember to change the others.
+    1. body tag: for most email clients
+    2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+    3. mso conditional: For Windows 10 Mail
+-->
+
+<body width="100%" style="margin: 0; padding: 0 !important; background: #f3f3f5; mso-line-height-rule: exactly;">
+  <center style="width: 100%; background: #f3f3f5;">
+    <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f3f3f5;">
+      <tr>
+      <td>
+      <![endif]-->
+
+    <!-- Visually Hidden Preview Text : BEGIN -->
+    <div
+      style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+      Hi {name}, Welcome to PyCon Taiwan 2021. We are very excited to have you with us in this wonderful event. This is our first virtual
+      Python conference in Taiwan and the grand opening is on 2 October. We have prepared an exciting program and other
+      activities for you. Below is a summarized information for reference.
+    </div>
+    <!-- Visually Hidden Preview Text : END -->
+
+    <div style="max-width: 680px; margin: 0 auto;">
+
+      <!--[if mso]>
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="680" align="center">
+      <tr>
+      <td>
+      <![endif]-->
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+        style="max-width: 680px; width:100%;color: #ffffff;background:#CFCFE5;">
+        <!-- Logo : BEGIN -->
+        <tr>
+          <td style="padding: 30px 30px;">
+            <table border="0" cellpadding="0" cellspacing="0" role="presentation"
+              style="color:#6266ce;width:100%;font-weight:700;font-size:20px;">
+              <tr>
+                <td>
+                  <div style="width: 141px; margin:auto;">
+                    <img width="141" src="images/logo.png" alt="PyCon Logo">
+                  </div>
+
+                </td>
+              </tr>
+              <!-- <tr>
+                <td style="padding-top: 2px;text-align:center;">
+                  3-4 Sep 2022, Taiwan
+                </td>
+              </tr> -->
+            </table>
+          </td>
+        </tr>
+        <!-- Logo : END -->
+        <!-----------------------------
+  
+            EMAIL BODY : BEGIN
+  
+        ------------------------------>
+
+        <!--  Email Body: Card BEGIN -->
+        <tr>
+          <td style="padding: 0px 10px;">
+            <!--[if mso]>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td bgcolor="#AFAEE6" style="max-width: 100%;text-align:center;padding: 30px 50px;color:#323166;">
+            <![endif]-->
+            <div
+              style="background: rgba(175, 174, 230, .60);max-width: 100%;text-align:center;padding: 30px 50px;color:#323166;border-radius:20px;">
+              <h2 style="font-size:28px;font-weight:700;margin-bottom:10px;margin-top:0px;">Note</h2>
+              <p style="font-size: 18px;font-weight:400;margin:0;line-height:28.8px;">Hi {name},<br>
+                Welcome to PyCon Taiwan 2021. We are very excited to have you with us in this wonderful event. This is our first virtual
+                Python conference in Taiwan and the grand opening is on 2 October. We have prepared an exciting program and other
+                activities for you. Below is a summarized information for reference.</p>
+            </div>
+            <!--[if mso]>
+                </td>
+              </tr>
+            </table>
+            <![endif]-->
+
+          </td>
+        </tr>
+        <!--  Email Body: Card END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section 3 Way to Join Us BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">3 Way to Join Us</h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">
+              Discord 、Gather Town 、Youtube</p>
+          </td>
+        </tr>
+        <!--  Email Body: Section 3 Way to Join Us END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section Online Registration BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+              Online Registration
+            </h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 12px 0px;">
+              <strong>Discord</strong> is our official messaging platform during this virtual conference. We will use corresponding channels on Discord
+              for official announcements, talk discussions, and as the service desk.
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 12px 0px;">
+              Please use the following link to join official PyCon Taiwan 2021 Discord server:
+              <br>
+              <a target="_blank" href="https://discord.gg/dr5JmVFNtj">https://discord.gg/dr5JmVFNtj</a>
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0;">
+              To gain access to the discussion channels, register according to the <a target="_blank" href="https://mail.surenotifyapi.com/v1/t/c?s=19&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63">PyConTW Discord Guideline</a> page:
+            </p>
+            <ul style="color: #323166;">
+              <li>
+                Find the PyCon TW RegBot
+              </li>
+              <li>
+                Send a command to tell the bot your token: 
+                <br>
+                !register {token}
+              </li>
+              <li>
+                You should now see a few new channels should show up in the left navigation bar.
+              </li>
+            </ul>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 12px 0px;">
+              For safety reasons, you can not send messages to the registration-desk channel. Please use the bot for registration. If
+              you encounter any issues, please send a message to any discord manager, or send a message to the public general channel
+              mentioning @discord manager. 
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;margin:0px 0px 12px 0px;">
+              Do not post your token value in a public channel.
+            </p>
+          </td>
+        </tr>
+        <!--  Email Body: Section Online Registration END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section Virtual Venues BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+              Virtual Venues
+            </h3>
+            <h4 style="color:#323166;">About Gather Town</h4>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              We constructed the <a target="_blank" href="https://mail.surenotifyapi.com/v1/t/c?s=20&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63">virtual venue</a> on Gather Town to provide a better interaction experience for attendees.
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              To learn how to use Gather Town, please read this <a target="_blank" href="https://mail.surenotifyapi.com/v1/t/c?s=21&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63">manual</a>.
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              Use the email address {email} you used to purchase the ticket on KKTIX to log into Gather.Town. Once you are logged in,
+              you can utilize the following links to enter different venues directly.
+            </p>
+            <!-- Nested List BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <!-- Nested List Block: 大會議程 BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;padding: 25px 0px 15px 0px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding: 15px 0px 15px 0px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">
+                          Click to enter <a target="_blank" href="https://app.gather.town/app/nGOG11wkRybqeJff/PyCon%20APAC%202022%20-%20Space%20A">Space A</a> (R0, R1, Lightning Talks)
+                        </h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">
+                          Click to enter <a target="_blank"
+                            href="https://mail.surenotifyapi.com/v1/t/c?s=23&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63">Space B</a> (R2, R3, Open Space)
+                        </h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                  </table>
+            
+                </td>
+              </tr>
+              <!-- Nested List Block: 大會議程 END -->
+
+            </table>
+            <!-- Nested List END -->
+          </td>
+        </tr>
+        <!--  Email Body: Section Virtual Venues END -->
+        <!--  Email Body: Section Program BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+              Program
+            </h3>
+            <!-- Nested List BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <!-- Nested List Block: Agenda BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">Agenda</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          Our program includes 5 keynotes, 53 talks, and 4 tutorials. Refer to <a href="https://tw.pycon.org/2022/zh-hant/conference/schedule" target="_blank">PyCon TW 2022 Schedule</a>  for further details.
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          There are four main rooms for keynotes, talks, and tutorials. R0 and R1 are in <a href="https://app.gather.town/app/nGOG11wkRybqeJff/PyCon%20APAC%202022%20-%20Space%20A" target="_blank">Space A</a>  on Gather.Town, while R2 and R3
+                          are in <a href="https://mail.surenotifyapi.com/v1/t/c?s=27&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63" target="_blank">Space B</a>.
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">After logging into Gather.Town, you can move to the audio room to watch talks or tutorials. Check our office hour
+                        schedule and meet the speakers in the program room or use Slido for Q&A.</p>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+
+                </td>
+              </tr>
+              <!-- Nested List Block: Agenda END -->
+              <!-- Nested List Block: Open Space BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">
+                          Open Space</h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          Open Space is located at the bottom center corner of <a href="https://mail.surenotifyapi.com/v1/t/c?s=27&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63"
+                            target="_blank">Space B</a>.
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          Unlike the conventional program, Open Space allows participants to design and layout their plans. It allows any attendee
+                          to organize a special gathering space. The topic can be anything, even non-technical!
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          To sign up for your topic of interest, fill out the following form <a href="https://mail.surenotifyapi.com/v1/t/c?s=29&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63" target="_blank">Open Space Registration</a>  and you will be granted your
+                          own Gather.Town room during 14:30–15:20 on 4 September (Day 2).
+                        </p>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+
+                </td>
+              </tr>
+              <!-- Nested List Block: Open Space END -->
+              <!-- Nested List Block: Lightning Talks BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">
+                          Lightning Talks
+                        </h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          Lightning Talks are located at the bottom left corner of <a href="https://app.gather.town/app/nGOG11wkRybqeJff/PyCon%20APAC%202022%20-%20Space%20A" target="_blank">Space A</a>.
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          The talks will also be featured on YouTube in the R0 broadcast.
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          Lightning Talks are as fast as lightning. Each speaker has five minutes to present and the clock starts ticking as the
+                          slides are presented. The speaker will have to finish their talk in a fast and precise manner. Failing to do so will
+                          result in being kicked out of the meeting room. If you are interested in signing up for one of our Lightning shows, fill
+                          out our sign-up sheet <a href="https://mail.surenotifyapi.com/v1/t/c?s=31&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63" target="_blank">Lightning Talk Registration</a> to enter a draw. We will announce the speaker for each day at 13:00.
+                          Registration will roll over to the next day, so the earlier you sign up, the higher is the chance of being drawn!
+                        </p>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+
+                </td>
+              </tr>
+              <!-- Nested List Block: Lightning Talks END -->
+              <!-- Nested List Block: PyNight BEGIN -->
+              <tr>
+                <td style="padding-left: 15px;padding-bottom:24px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <!-- Nested List Block: Title BEGIN -->
+                    <tr>
+                      <td style="width: 24px;">
+                        <img width="24px" src="images/decorators/bullet.png" alt="decorator">
+                      </td>
+                      <td style="padding-bottom: 6px;">
+                        <h4 style="font-weight:700;font-size:16px;color:#323166;line-height:19.2px;margin:0;">
+                          PyNight
+                        </h4>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Title END -->
+                    <!-- Nested List Block: Content BEGIN -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          PyNight will be held in Gather.Town. Enter Platform 3 at 17:45 on 3 September (Day 1).
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          PyNight is an extension to our annual BoF activity where the Python community can socialize and network. PyNight will be
+                          officially held at 17:45. It is highly recommended that attendees join us while having dinner so they can enjoy our Q&A
+                          challenge (prizes awarded). The Q&A Challenge starts at 18:30. Join us for a chance to win a prize.
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          Share your comment ➡ <a href="https://mail.surenotifyapi.com/v1/t/c?s=32&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63" target="_blank">here</a> 
+                        </p>
+                        <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                          Do you want to say something to PyConTW or PyCast? Or do you want to share the moments that impress you on the show? Or
+                          simply want to shout: "I'm on the show." Welcome to leave a message. We will pick out interesting messages and read them
+                          on PyNight, your message will be a part of PyCast as well!
+                        </p>
+                      </td>
+                    </tr>
+                    <!-- Nested List Block: Content END -->
+                  </table>
+
+                </td>
+              </tr>
+              <!-- Nested List Block: PyNight END -->
+            </table>
+            <!-- Nested List END -->
+          </td>
+        </tr>
+        <!--  Email Body: Section Program END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section Job Fair BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+              Job Fair
+            </h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              The Job Fair will be broadcasted in all rooms during 14:40–16:10 on Day 1.
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              Our Job Fair specifically targets Software Engineers (Python) positions. It allows our sponsors to promote their
+              company
+              and potential job openings on stage. Attendees can utilize the opportunity to communicate with sponsors, network, or
+              even pass out their resume. We encourage you to speak to our sponsors if you are interested in working for their
+              company.
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              There will also be a Job Board at the top corner of <a
+                href="https://mail.surenotifyapi.com/v1/t/c?s=34&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63"
+                target="_blank">Space1</a> and <a
+                href="https://mail.surenotifyapi.com/v1/t/c?s=35&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63"
+                target="_blank">Space2</a>.
+            </p>
+          </td>
+        </tr>
+        <!--  Email Body: Section Job Fair END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section Game BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+              Game
+            </h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              Find the tasks in the Gather.Town venue, join our Game Discord server and answer the questions to get ⭐ and 🪙. Collect
+              5 ⭐ to earn the lottery chance! The attendees with top 15 🪙 will get extra gifts! Check out the venue to find clues and
+              beat the challenges now!
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              Visit our sponsors and keep an eye on any details for clues.
+            </p>
+          </td>
+        </tr>
+        <!--  Email Body: Section Game END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section Support Python! BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+              Support Python!
+            </h3>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              Becoming a basic member of the Python Software Foundation (PSF) is one of the
+              easiest ways to support Python. You can use the following link to register:
+              <br/>
+              <a href="https://www.python.org/users/membership/" target="_blank">https://www.python.org/users/membership/</a>
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              In addition, you can also help PSF Diversity and Inclusion Working Group by filling out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8957QqYuPDF2qL8Q2ctFzBH_mPMi0yxSQ2oqOACTU9jIVDg/viewform" target="_blank">Diversity & Inclusion (D&I) Awareness questionnaire</a>.
+            </p>
+          </td>
+        </tr>
+        <!--  Email Body: Section Support Python! END -->
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!--  Email Body: Section 注意事項 BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td style="border-left: 8px solid #323166;padding-left:30px;">
+                  <h3 style="font-size: 24px;font-weight:400;color:#6266CE;margin-top:0px;margin-bottom:24px;">
+                    Notice
+                  </h3>
+                  <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                    We will send electronic invoices directly to your email address after the event. Please feel free to contact <a href="mailto: organizers@python.tw" target="_blank">organizers@pycon.tw</a>
+                     for any questions.
+                  </p>
+                  <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+                    Finally, please read our <a href="https://mail.surenotifyapi.com/v1/t/c?s=36&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63" target="_blank">Code of Conduct</a> and comply accordingly during the event. Let us enjoy and cherish the moments
+                    during PyConTW 2021, share and inspire each other!
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--  Email Body: Section 注意事項 END -->
+        <!--  Email Body: Section Support Python! BEGIN -->
+        <tr>
+          <td style="padding: 20px;">
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              <strong>PyConTW 2021 全體志工敬邀</strong>
+            </p>
+            <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
+              If you no longer want to receive our emails, you can click <a href="https://mail.surenotifyapi.com/v1/t/c?s=37&x=20211001083119-1-d1429c57-95a5-4578-937b-ab2b9d987a63" target="_blank">unsubscribe</a>.
+            </p>
+          </td>
+        </tr>
+        <!--  Email Body: Section Support Python! END -->
+
+        <!-- Clear Spacer : BEGIN -->
+        <tr>
+          <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+            &nbsp;
+          </td>
+        </tr>
+        <!-- Clear Spacer : END -->
+        <!-----------------------------
+  
+          EMAIL BODY : END
+  
+        ------------------------------>
+
+        <!-- Footer : BEGIN -->
+        <tr>
+          <td style="padding: 20px 40px;background:rgba(175, 174, 230, .60);text-align: center;">
+            <!-- Footer : Icons BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td>
+                  <a href="https://www.facebook.com/pycontw" target="_blank">
+                    <img width="33" height="33" src="images/icons/facebook.png" alt="Pycon TW Facebook">
+                  </a>
+                </td>
+                <td>
+                  <a href="mailto: organizers@python.tw" target="_blank">
+                    <img width="33" height="33" src="images/icons/email.png" alt="Email to Pycon TW">
+                  </a>
+                </td>
+                <td>
+                  <a href="https://www.youtube.com/c/PyConTaiwanVideo" target="_blank">
+                    <img width="33" height="33" src="images/icons/youtube.png" alt="Pycon TW Youtube">
+                  </a>
+                </td>
+              </tr>
+            </table>
+            <!-- Footer : Icons END -->
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top:10px;padding-bottom:20px;color:#6266CE;text-align: center;">
+            Sent by <a style="text-decoration: underline;" href="https://tw.pycon.org/">PyCon APAC 2022</a>
+          </td>
+        </tr>
+        <!-- Footer : END -->
+      </table>
+    </div>
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </center>
+</body>
+<!-- Designed by Moto -->
+<!-- HTML/CSS by Derick -->
+
+</html>

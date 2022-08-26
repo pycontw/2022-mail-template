@@ -169,7 +169,7 @@
     <!-- Visually Hidden Preview Text : BEGIN -->
     <div
       style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-      Hi {name}, Welcome to PyCon APAC 2022. We have prepared an exciting program and other activities for you. Below is a summarized
+      Hi {{ person.name }}, Welcome to PyCon APAC 2022. We have prepared an exciting program and other activities for you. Below is a summarized
       information for reference.
     </div>
     <!-- Visually Hidden Preview Text : END -->
@@ -221,7 +221,7 @@
             <![endif]-->
             <div
               style="background: rgba(175, 174, 230, .60);max-width: 100%;text-align:center;padding: 30px 50px;color:#323166;border-radius:20px;">
-              <p style="font-size: 18px;font-weight:400;margin:0;line-height:28.8px;">Hi {name},<br>
+              <p style="font-size: 18px;font-weight:400;margin:0;line-height:28.8px;">Hi {{ person.name }},<br>
                 Welcome to PyCon APAC 2022. We have prepared an exciting program and other activities for you. Below is a summarized
                 information for reference.</p>
             </div>
@@ -287,7 +287,7 @@
                 href="https://docs.google.com/presentation/d/1Y1CLWXgnnqCr_UIn17QtQhKh3bJayIii/edit?usp=sharing&ouid=109024316375935982639&rtpof=true&sd=true">manual</a>.
             </p>
             <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
-              Use the email address <strong>{email}</strong> you used to purchase the ticket on KKTIX to log into Gather.Town.
+              Use the email address <strong>{{ person.email }}</strong> you used to purchase the ticket on KKTIX to log into Gather.Town.
               Once you are logged in,
               you can utilize the following links to enter different venues directly.
             </p>
@@ -638,7 +638,7 @@
                           organizational skills and the ability to work in a dynamic, fast-paced, work environment.
                         </p>
                         <p style="font-size: 16px;line-height:22.4px;font-weight:400;color:#323166;">
-                          Join our short talks and come our booth to know more about Micron👉
+                          Join our short talks and come our booth to know more about Micron
                           <br>
                           <a target="_blank" href="https://www.micron.com/ ">https://www.micron.com/</a>
                         </p>
